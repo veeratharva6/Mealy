@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Home</title>
+</head>
+<body>
+<div style="min-width: 960px; margin: 0 auto;">
+    <table width = "100%">
+        <tr>
+            <th align="right">
+                <div class="dropdown">
+                    <img src="logos/accountLogo.svg" height = "50px" alt="Account">
+                    <div class = "dropdown-content">
+                        <a href="pastOrders.html">
+                            Past Orders
+                        </a>
+                        <br>
+                        <a href="account.html">
+                            Account
+                        </a>
+                        <br>
+                        <a href="settings.html">
+                            Settings
+                        </a>
+                        <br>
+                        <a href="loginold.html">
+                            Sign out
+                        </a>
+                    </div>
+            </th>
+            <th align="left">
+                <a href = "account.html" style="margin: auto;">
+                   <font color = "black">Shane Waxler</font> 
+                </a>
+            </th>
+            <th width = "500"></th>
+            <th align="left">
+                <a href="index.html">
+                    <img src="logos/mealyLogo.png" alt="Shane Waxler Logo" height="100px">
+                </a>
+            </th>
+            <th align="right" width = "750">
+                <select id="state" name="state">
+                    <option value="delivery">Delivery</option>
+                    <option value="pickup">Pickup</option>
+                </select>
+                <select id="state" name="state">
+                    <option value="delivery">1234 Buckingham Way</option>
+                    <option value="pickup">Other Address...</option>
+                </select>
+                <input type="text" placeholder="Search..." name="search" size="50px" style = "margin-left: 10px; margin-right: 10px;">
+            </th>
+        </tr>
+    </table>
+    <table style="margin-left: 50px;">
+        <tr>
+            <th>
+                <img src="logos/user.jpeg" alt="User Logo" width = "150px">
+            </th>
+            <th>
+                <h2>
+                    User Name
+                </h2>
+                +1 (858) - 444 - 1234
+            </th>
+        </tr>
+        <tr>
+            <th align="left">
+                <h3>
+                    Location
+                </h3>
+            </th>
+            <th align="left">
+                <select id="filter" name="filter">
+                    <option value="">United States</option>
+                    <option value="all">Select One...</option>
+                    <option value="vegan">Ukraine</option>
+                    <option value="vegetarian">United Arab Emirates</option>
+                    <option value="pizza">United Kingdom</option>
+                    <option value="more">More...</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th align="left">
+                <h3>
+                    Language
+                </h3>
+            </th>
+            <th align="left">
+                <select id="filter" name="filter">
+                    <option value="">English</option>
+                    <option value="all">Select One...</option>
+                    <option value="vegan">Spanish</option>
+                    <option value="vegetarian">French</option>
+                    <option value="pizza">Arabic</option>
+                    <option value="more">More...</option>
+                </select>
+            </th>
+        </tr>
+        <tr>
+            <th align="left">
+                <h3>
+                    Email
+                </h3>
+            </th>
+            <th align="left"> 
+                swaxler@mail.sfsu.edu <br>
+                <a href="/"><font color = "black"> + Add another email</font></a>
+            </th>
+        </tr>
+        <tr>
+            <th align="left">
+                <button>Save Changes</button>
+            </th>
+        </tr>
+    </table>
+    <br><br><br>
+    <button style="margin-left: 50px;" onclick = "location.href='loginold.html'">
+        Log Out
+    </button>
+    <div>
+        <section>
+            <br><br><br>
+            <hr>
+            <br><br>
+        </section>
+        <section>
+            <table width = "100%">
+                <tr>
+                    <th>
+                        <h3>
+                            Explore
+                        </h3>
+                    </th>
+                    <th>
+                        <h3>
+                            Contact
+                        </h3>
+                    </th>
+                    <th>
+                        <h3>
+                            Follow
+                        </h3>
+                    </th>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <a href="index.html"><font color="black">Home</font></a>
+                    </td>
+                    <td>
+                        <a href="mailto:support@mealy.com"><font color="black">Email Us</font></a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/" target="_blank"><font color="black">Youtube</font></a>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <a href="\"><font color="black">About Us</font></a>
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/" target="_blank"><font color="black">Instagram</font></a>
+                    </td>
+                </tr>
+                <tr align = "center">
+                    <td>
+                        <a href="settings.html"><font color="black">Settings</font></a>
+                    </td>
+                </tr>
+                <tr align = "center">
+                    <td>
+                        <a href="loginold.html"><font color="black">Login</font></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</div>
+</body>
+</html>

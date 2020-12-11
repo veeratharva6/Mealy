@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="cart.js" async></script>
+    <title>Home</title>
+</head>
+<body style="position:relative;">
+<div style="min-width: 960px; margin: 0 auto;">
+    <table width = "100%">
+        <tr>
+            <th align="right">
+                <div class="dropdown">
+                    <img src="logos/accountLogo.svg" height = "50px" alt="Account">
+                    <div class = "dropdown-content">
+                        <a href="pastOrders.html">
+                            Past Orders
+                        </a>
+                        <br>
+                        <a href="account.html">
+                            Account
+                        </a>
+                        <br>
+                        <a href="settings.html">
+                            Settings
+                        </a>
+                        <br>
+                        <a href="loginold.html">
+                            Sign out
+                        </a>
+                    </div>
+            </th>
+            <th align="left">
+                <a href = "account.html" style="margin: auto;" class = "name">
+                   <font color = "black">Shane Waxler</font> 
+                </a>
+            </th>
+            <th width = "500"></th>
+            <th align="left">
+                <a href="index.html">
+                    <img src="logos/mealyLogo.png" alt="Shane Waxler Logo" height="100px">
+                </a>
+            </th>
+            <th align="right" width = "750">
+                <select id="deliveryPickup" name="deliveryPickup">
+                    <option value="delivery">Delivery</option>
+                    <option value="pickup">Pickup</option>
+                </select>
+                <select id="address" name="address">
+                    <option value="delivery">1234 Buckingham Way</option>
+                    <option value="pickup">Other Address...</option>
+                </select>
+                <input type="text" placeholder="Search..." name="search" size="50px" style = "margin-left: 10px; margin-right: 10px;">
+            </th>
+        </tr>
+    </table>
+    <img src="logos/sproutsBanner.png" alt="Sprouts Banner" width="100%">
+    <div>
+        <table width = "100%">
+            <tr align="left" style="position: sticky;">
+                <th width ="33%">
+                    <h2>
+                        Picked for you
+                    </h2>
+                </th>
+                <th width ="33%">
+
+                </th>
+                <td align="right" width ="33%">
+                    <li style = "display: inline-block;list-style-type: none; position: relative;">
+                        <img src="logos/cartLogo.jpg" alt="Shopping Cart" class = "cart" onclick = "openCart()" >
+                        <p class = "number">0</p>
+                    </li>
+                    <table class="cart-popup" id = "Cart">
+                        <tr>
+                            <th width = 100>
+                                item
+                                <hr>
+                            </th>
+                            <th width = 100>
+                                quantity
+                                <hr>
+                            </th>
+                            <th width = 100>
+                                price
+                                <hr>
+                            </th>
+                            <th width = 100>
+
+                            </th>
+                        </tr>
+                        <tr>
+                            <td>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <span class = "price-total">
+                                    $0.00
+                                </span>
+                            </td>
+                            <td>
+                                <button onclick="closeCart()">
+                                    close
+                                </button>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class = 'buy-item'>
+                    <font color="black">
+                        <img src="logos/daveBread.jpg" alt="Sprouts" border="2px" height="273px" width = "273px" class = "buy-image"><br>
+                        <span class = "buy-title">
+                            Killer Bread Organic 21 Whole Grains and Seeds bread - 27 oz Loaf ($6.99)
+                        </span>
+                        <div class = "buy-price">
+                            $6.99
+                        </div>
+                        <br>
+                        <button class = "add-to-cart">
+                            add to cart
+                        </button>
+                    </font>
+                </td>
+                <td align="center" class = 'buy-item'>
+                    <font color="black">
+                        <img src="logos/vitalEggs.jpg" alt="Sprouts" border="2px" height="273px" width = "273px"><br>
+                        <span class = "buy-title">
+                            Vital Farms Pasture Raised Eggs ($4.94 12 ct)
+                        </span> <br>
+                        <div class="buy-price">
+                            $4.94
+                        </div>
+                        <button class = "add-to-cart">
+                            add to cart
+                        </button>
+                    </font>
+                </td>
+                <td align="center" class = 'buy-item'>
+                    <font color="black">
+                        <img src="logos/honeyApple.jpg" alt="Sprouts" border="2px" height="273px" width = "273px"><br>
+                        <span class = "buy-title">
+                            Organic Honey Apple ($2.69/lb)
+                        </span>
+                        <br>
+                        <div class="buy-price">
+                            $2.69
+                        </div>
+                        <button class = "add-to-cart">
+                            add to cart
+                        </button>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>
+                        <br>
+                    </h1>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class = 'buy-item'>
+                    <font color="black">
+                        <img src="logos/broccoli.jpg" alt="Sprouts" border="2px" height="273px" width = "273px"><br>
+                        <span class = "buy-title">
+                            Organic Broccoli ($2.49/lb) 
+                        </span>
+                        <br>
+                        <div class = "buy-price">
+                            $2.49
+                        </div>
+                        <button class = "add-to-cart">
+                            add to cart
+                        </button>
+                    </font>
+                </td>
+                <td align="center" class = 'buy-item'>
+                    <font color="black">
+                        <img src="logos/daveMuffin.jpg" alt="Sprouts" border="2px" height="273px" width = "273px"><br>
+                        <span class = "buy-title">
+                            Dave's Killer Bread Classic English Muffins - 13.2 oz ($6.49) 
+                        </span>
+                        <br>
+                        <div class="buy-price">
+                            $6.49
+                        </div>
+                        <button class = "add-to-cart">
+                            add to cart
+                        </button>
+                    </font>
+                </td>
+                <td align="center" class = 'buy-item'>
+                    <font color="black">
+                        <img src="logos/plantCheddar.jpg" alt="Sprouts" border="2px" height="273px" width = "273px"><br>
+                        <span class = "buy-title">
+                            365 Everyday Value Plant-Based Cheddar Cheese Alternative - 8 oz ($3.99) 
+                        </span>
+                        <div class="buy-price">
+                            $3.99
+                        </div>
+                        <br>
+                        <button class = "add-to-cart">
+                            add to cart
+                        </button>
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <h1>
+                        <br>
+                    </h1>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" class = 'buy-item'>
+                    <font color="black">
+                        <img src="logos/bananaNino.jpg" alt="Sprouts" border="2px" height="273px" width = "273px"><br>
+                        <span class = "buy-title">
+                            Organic Nino Baby Banana Bundle ($1.99/lb) 
+                        </span>
+                        <br>
+                        <div class = "buy-price">
+                            $1.99
+                        </div>
+                        <button class = "add-to-cart">
+                            add to cart
+                        </button>
+                    </font>
+                </td>
+                <td align="center" class = 'buy-item'>
+                    <font color="black">
+                        <img src="logos/bartlettPear.jpg" alt="Sprouts" border="2px" height="273px" width = "273px"><br>
+                        <span class = "buy-title">
+                            Organic Bartlett Pear ($1.99/lb) 
+                        </span>
+                        <br>
+                        <div class = "buy-price">
+                            $1.99
+                        </div>
+                        <button class = "add-to-cart">
+                            add to cart
+                        </button>
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <section>
+            <br><br><br>
+            <hr>
+            <br><br>
+        </section>
+        <section>
+            <table width = "100%">
+                <tr>
+                    <th>
+                        <h3>
+                            Explore
+                        </h3>
+                    </th>
+                    <th>
+                        <h3>
+                            Contact
+                        </h3>
+                    </th>
+                    <th>
+                        <h3>
+                            Follow
+                        </h3>
+                    </th>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <a href="index.html"><font color="black">Home</font></a>
+                    </td>
+                    <td>
+                        <a href="mailto:support@mealy.com"><font color="black">Email Us</font></a>
+                    </td>
+                    <td>
+                        <a href="https://www.youtube.com/" target="_blank"><font color="black">Youtube</font></a>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td>
+                        <a href="\"><font color="black">About Us</font></a>
+                    </td>
+                    <td>
+                        
+                    </td>
+                    <td>
+                        <a href="https://www.instagram.com/" target="_blank"><font color="black">Instagram</font></a>
+                    </td>
+                </tr>
+                <tr align = "center">
+                    <td>
+                        <a href="settings.html"><font color="black">Settings</font></a>
+                    </td>
+                </tr>
+                <tr align = "center">
+                    <td>
+                        <a href="loginold.html"><font color="black">Login</font></a>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </div>
+</div>
+</body>
+</html>
